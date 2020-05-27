@@ -1,0 +1,20 @@
+{
+  "name": "locallyhostedfiles",
+  "version": "1.0.0",
+  "description": "Serves files via https",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Oren",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
