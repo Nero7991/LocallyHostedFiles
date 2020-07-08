@@ -28,7 +28,13 @@ app.get('/app-template.bin', function (request, result) {
     });
 });
 
+var IsFirstTime = true;
+
 function checkIfModified(callback) {
+    if(IsFirstTime){
+        IsFirstTime = false;
+        return callback(true);
+    }
     var res;
     fs.open(BinaryPath, 'r', (err, fd) => {
         if (err) throw err;
